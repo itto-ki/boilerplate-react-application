@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "noEmit": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

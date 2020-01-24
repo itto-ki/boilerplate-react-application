@@ -1,0 +1,38 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3,
+                "targets": {
+                    "chrome": "79"
+                },
+                "modules": false
+            }
+        ],
+        "@babel/preset-typescript",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-optional-chaining",
+        "@babel/plugin-proposal-nullish-coalescing-operator"
+    ],
+    "env": {
+        "production": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "useBuiltIns": "usage",
+                        "corejs": 3,
+                        "targets": {
+                            "ie": 11
+                        }
+                    }
+                ]
+            ],
+            "plugins": ["transform-remove-console"]
+        }
+    }
+}
